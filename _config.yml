@@ -2,9 +2,15 @@
 #      Main Configs       #
 # ----------------------- #
 
+<<<<<<< HEAD
 url: http://zgao4.github.io
 title: 高治国的个人网站
 subtitle: A blogging for zgao4
+=======
+url: http://zgao4.github.com
+title: Gao Zhiguo's Blog
+subtitle: 记录高治国工作生活中的点滴
+>>>>>>> 9ec9fb34d3e96ff6aea4b4f07473932573b7ae54
 author: Gao Zhiguo
 simple_search: http://google.com/search
 description:
