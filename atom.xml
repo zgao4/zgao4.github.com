@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[高治国的个人网站]]></title>
+  <link href="http://zgao4.github.io/atom.xml" rel="self"/>
+  <link href="http://zgao4.github.io/"/>
+  <updated>2013-05-15T21:25:35+08:00</updated>
+  <id>http://zgao4.github.io/</id>
+  <author>
+    <name><![CDATA[Gao Zhiguo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[生活琐事真心烦人啊]]></title>
+    <link href="http://zgao4.github.io/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a/"/>
+    <updated>2013-05-15T21:22:00+08:00</updated>
+    <id>http://zgao4.github.io/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a</id>
+    <content type="html"><![CDATA[<p>项目正着急，要搞视频通讯，php的一些烂事搞不定也来问我。</p>
+
+<p>家里老婆马上要生了，还有一堆烂事，好烦啊。</p>
+
+<p>还有搬家，想想头大。</p>
+
+<p>中年男人的生活啊</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用Octopress]]></title>
+    <link href="http://zgao4.github.io/blog/2013/05/15/shi-yong-octopress/"/>
+    <updated>2013-05-15T20:00:00+08:00</updated>
+    <id>http://zgao4.github.io/blog/2013/05/15/shi-yong-octopress</id>
+    <content type="html"><![CDATA[<p>使用Octopress的第一篇blog</p>
+]]></content>
+  </entry>
+  
+</feed>
