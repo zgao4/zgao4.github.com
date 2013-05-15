@@ -1,4 +1,6 @@
-source "http://rubygems.org"
+# source "http://rubygems.org"
+source 'http://ruby.taobao.org/'
+# gem 'rails', '3.2.12'
 
 group :development do
   gem 'rake', '~> 0.9'
