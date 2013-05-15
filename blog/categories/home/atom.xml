@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: home | 高治国的个人网站]]></title>
-  <link href="http://zgao4.github.io/blog/categories/home/atom.xml" rel="self"/>
-  <link href="http://zgao4.github.io/"/>
-  <updated>2013-05-15T21:25:35+08:00</updated>
-  <id>http://zgao4.github.io/</id>
+  <title><![CDATA[Category: home | Gao Zhiguo's Blog]]></title>
+  <link href="http://zgao4.github.com/blog/categories/home/atom.xml" rel="self"/>
+  <link href="http://zgao4.github.com/"/>
+  <updated>2013-05-15T22:11:53+08:00</updated>
+  <id>http://zgao4.github.com/</id>
   <author>
     <name><![CDATA[Gao Zhiguo]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[生活琐事真心烦人啊]]></title>
-    <link href="http://zgao4.github.io/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a/"/>
+    <link href="http://zgao4.github.com/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a/"/>
     <updated>2013-05-15T21:22:00+08:00</updated>
-    <id>http://zgao4.github.io/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a</id>
+    <id>http://zgao4.github.com/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a</id>
     <content type="html"><![CDATA[<p>项目正着急，要搞视频通讯，php的一些烂事搞不定也来问我。</p>
 
 <p>家里老婆马上要生了，还有一堆烂事，好烦啊。</p>
