@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tech | Gao Zhiguo's Blog]]></title>
   <link href="http://zgao4.github.com/blog/categories/tech/atom.xml" rel="self"/>
   <link href="http://zgao4.github.com/"/>
-  <updated>2013-05-15T23:26:03+08:00</updated>
+  <updated>2013-05-17T11:17:12+08:00</updated>
   <id>http://zgao4.github.com/</id>
   <author>
     <name><![CDATA[Gao Zhiguo]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[郁闷啊，太土鳖了]]></title>
+    <link href="http://zgao4.github.com/blog/2013/05/17/yu-men-a-%2Ctai-tu-bie-liao/"/>
+    <updated>2013-05-17T11:11:00+08:00</updated>
+    <id>http://zgao4.github.com/blog/2013/05/17/yu-men-a-,tai-tu-bie-liao</id>
+    <content type="html"><![CDATA[<h2>现象</h2>
+
+<p>doubango/idoubs升级了，添加了opus库，本来是好事，结果更新后死活编译不过了，总是报找不到opus相应的源文件。</p>
+
+<h2>过程</h2>
+
+<p>疯狂的找，发现opus.c那个文件在<code>ls -l@</code>时多了一个@，貌似是什么扩展属性，然后用emacs打开里面每行末尾都有<sup>M</sup>，以为是这个原因，使用dos2unix转换了之后还是不行，反正折腾来折腾去怎么都不行。</p>
+
+<h2>解决</h2>
+
+<p>太土鳖了，原来idoubs默认是找videoChat这目录底下的doubango，我的videoChat/mydoubs/doubango更新了，而上一级目录的doubango没有更新。。。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[使用Octopress]]></title>
