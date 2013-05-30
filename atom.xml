@@ -4,7 +4,7 @@
   <title><![CDATA[Gao Zhiguo's Blog]]></title>
   <link href="http://zgao4.github.com/atom.xml" rel="self"/>
   <link href="http://zgao4.github.com/"/>
-  <updated>2013-05-29T00:20:48+08:00</updated>
+  <updated>2013-05-30T14:29:57+08:00</updated>
   <id>http://zgao4.github.com/</id>
   <author>
     <name><![CDATA[Gao Zhiguo]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[可耻的错误，引以为戒]]></title>
+    <link href="http://zgao4.github.com/blog/2013/05/30/ke-chi-de-cuo-wu-%2Cyin-yi-wei-jie/"/>
+    <updated>2013-05-30T11:20:00+08:00</updated>
+    <id>http://zgao4.github.com/blog/2013/05/30/ke-chi-de-cuo-wu-,yin-yi-wei-jie</id>
+    <content type="html"><![CDATA[<h2>What</h2>
+
+<p>出现bug，烧写104，会变成1004。</p>
+
+<h2>Why</h2>
+
+<p>查了半天，发现问题最后变成</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sprintf(tmp, "11.%d", iPITCH);
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果<code>iPITCH</code>值为1，则<code>tmp</code>为11.1，但是系统会自动将其变成11.10，也就是说系统会自动将其判定为<code>%02f</code>。所以，悲剧出现了</p>
+
+<h2>How</h2>
+
+<p>知道了为啥，结果自然就简单了。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sprintf(tmp, "11.%02d", iPITCH);
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusion</h2>
+
+<p>代码一定一定要仔细。一个小小的错误可能会带来<strong>很严重</strong>的后果。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[写在5月末]]></title>
