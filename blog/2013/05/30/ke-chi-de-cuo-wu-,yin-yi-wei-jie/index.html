@@ -30,6 +30,9 @@ sprintf(tmp, "11.%d", iPITCH); 如果iPITCH值为1，则tmp为11.1，但是系�
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+        type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
 
   
 
@@ -119,6 +122,47 @@ sprintf(tmp, "11.%d", iPITCH); 如果iPITCH值为1，则tmp为11.1，但是系�
 <h2>Conclusion</h2>
 
 <p>代码一定一定要仔细。一个小小的错误可能会带来<strong>很严重</strong>的后果。</p>
+
+<!-- -*- html -*- -->
+
+<div class="imgpopup screen">
+  <div class="caption">Click the image for a larger view.</div>
+  <a href='javascript:void(0)' style="text-decoration: none" id="image-1">
+    <img src="images/gallery/self/gaozhiguo.jpg"
+         width="300" height="300"
+         alt="Click me."/>
+  </a>
+  <div id="image-dialog-1" style="display:none">
+    <img src="images/gallery/self/gaozhiguo.jpg"
+         width="600" height="600"/>
+    <br clear="all"/>
+  </div>
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    jQuery("#image-dialog-1").hide();
+    jQuery("#image-dialog-1").dialog({
+      autoOpen:  false,
+      modal:     true,
+      draggable: false,
+      minWidth:  640,
+      minHeight: 640,
+      title:     "大头照",
+      show:      'scale',
+      hide:      'scale'
+    });
+
+    jQuery("#image-1").click(function() {
+      jQuery("#image-dialog-1").dialog('open');
+    });
+
+  });
+</script>
+<div class="illustration print">
+  <img src="images/gallery/self/gaozhiguo.jpg" width="600" height="600"/>
+</div>
+
+
 </div>
 
 
@@ -167,6 +211,8 @@ sprintf(tmp, "11.%d", iPITCH); 如果iPITCH值为1，则tmp为11.1，但是系�
         <a class="basic-alignment left" href="/blog/2013/05/28/xie-zai-5yue-mo/" title="Previous Post: 写在5月末">&laquo; 写在5月末</a>
       
       
+        <a class="basic-alignment right" href="/blog/2013/05/30/ce-shi-octopress/" title="Next Post: 测试octopress">测试octopress &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -202,6 +248,10 @@ sprintf(tmp, "11.%d", iPITCH); 如果iPITCH值为1，则tmp为11.1，但是系�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/30/ce-shi-octopress/">测试octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/30/ke-chi-de-cuo-wu-%2Cyin-yi-wei-jie/">可耻的错误，引以为戒</a>
       </li>
     
@@ -215,10 +265,6 @@ sprintf(tmp, "11.%d", iPITCH); 如果iPITCH值为1，则tmp为11.1，但是系�
     
       <li class="post">
         <a href="/blog/2013/05/15/sheng-huo-suo-shi-zhen-xin-fan-ren-a/">生活琐事真心烦人啊</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/15/shi-yong-octopress/">使用Octopress</a>
       </li>
     
   </ul>

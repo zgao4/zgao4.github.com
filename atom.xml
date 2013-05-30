@@ -4,7 +4,7 @@
   <title><![CDATA[Gao Zhiguo's Blog]]></title>
   <link href="http://zgao4.github.com/atom.xml" rel="self"/>
   <link href="http://zgao4.github.com/"/>
-  <updated>2013-05-30T14:29:57+08:00</updated>
+  <updated>2013-05-30T19:19:00+08:00</updated>
   <id>http://zgao4.github.com/</id>
   <author>
     <name><![CDATA[Gao Zhiguo]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[测试octopress]]></title>
+    <link href="http://zgao4.github.com/blog/2013/05/30/ce-shi-octopress/"/>
+    <updated>2013-05-30T19:10:00+08:00</updated>
+    <id>http://zgao4.github.com/blog/2013/05/30/ce-shi-octopress</id>
+    <content type="html"><![CDATA[<h2>test octopress</h2>
+
+<p>看看效果如何</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[可耻的错误，引以为戒]]></title>
@@ -45,6 +56,47 @@
 <h2>Conclusion</h2>
 
 <p>代码一定一定要仔细。一个小小的错误可能会带来<strong>很严重</strong>的后果。</p>
+
+<!-- -*- html -*- -->
+
+<div class="imgpopup screen">
+  <div class="caption">Click the image for a larger view.</div>
+  <a href='javascript:void(0)' style="text-decoration: none" id="image-1">
+    <img src="images/gallery/self/gaozhiguo.jpg"
+         width="300" height="300"
+         alt="Click me."/>
+  </a>
+  <div id="image-dialog-1" style="display:none">
+    <img src="images/gallery/self/gaozhiguo.jpg"
+         width="600" height="600"/>
+    <br clear="all"/>
+  </div>
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    jQuery("#image-dialog-1").hide();
+    jQuery("#image-dialog-1").dialog({
+      autoOpen:  false,
+      modal:     true,
+      draggable: false,
+      minWidth:  640,
+      minHeight: 640,
+      title:     "大头照",
+      show:      'scale',
+      hide:      'scale'
+    });
+
+    jQuery("#image-1").click(function() {
+      jQuery("#image-dialog-1").dialog('open');
+    });
+
+  });
+</script>
+<div class="illustration print">
+  <img src="images/gallery/self/gaozhiguo.jpg" width="600" height="600"/>
+</div>
+
+
 ]]></content>
   </entry>
   
